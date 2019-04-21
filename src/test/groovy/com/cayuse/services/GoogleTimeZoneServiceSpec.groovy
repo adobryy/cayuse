@@ -39,7 +39,7 @@ class GoogleTimeZoneServiceSpec extends Specification{
         where: "coordinates and Elevation are given "
         longtitude | latitude   || timeZone
         '-122.67'  | '45.52'    || 'Pacific Daylight Time'        // Portland OR
-        '-105.39'  | '40.12'    || 'Mountain Daylight Time'     // Boulder, CO
+        '-105.39'  | '40.12'    || 'Mountain Daylight Time'       // Boulder, CO
 
     }
 

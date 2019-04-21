@@ -14,7 +14,6 @@ public class ZipRestController extends BaseController{
     @Autowired
     ServiceLocatorImpl serviceLocator;
 
-    //http://localhost:8080/api?zip=97214
     @GetMapping
     public String getZipRelatedInformation (
                             @RequestParam(name = "zip") String zipStr ) {

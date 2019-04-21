@@ -26,17 +26,6 @@ public class ServiceLocatorImpl implements ServiceLocator {
     GoogleTimeZoneService googleTimeZoneService;
 
 
-/*    public ServiceLocatorImpl(OpenWeatherService openWeatherService,
-                              GoogleElevationService googleElevationService,
-                              GoogleTimeZoneService googleTimeZoneService) {
-
-        this.openWeatherService = openWeatherService;
-        this.googleElevationService = googleElevationService;
-        this.googleTimeZoneService = googleTimeZoneService;
-    }*/
-
-
-
     @Override
     public String getAllAvailableInfoFromZip(String zip)  throws InvalidInpuException, NoDataAvailableException {
 
