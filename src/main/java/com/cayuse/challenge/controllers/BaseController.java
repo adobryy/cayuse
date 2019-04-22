@@ -1,6 +1,6 @@
 package com.cayuse.challenge.controllers;
 
-import com.cayuse.challenge.exceptions.InvalidInpuException;
+import com.cayuse.challenge.exceptions.InvalidInputException;
 import com.cayuse.challenge.exceptions.NoDataAvailableException;
 import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.exception.ExceptionUtils;
@@ -19,10 +19,10 @@ public abstract class BaseController {
 
     private static final Logger logger = LoggerFactory.getLogger(BaseController.class);
 
-    @ExceptionHandler(InvalidInpuException.class)
+    @ExceptionHandler(InvalidInputException.class)
     @ResponseBody
     @ResponseStatus(NOT_ACCEPTABLE)
-    public String handleInvalidInpuException(InvalidInpuException ex) {
+    public String handleInvalidInpuException(InvalidInputException ex) {
         return logStackTraceAndReturnMessage(ex);
     }
 

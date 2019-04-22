@@ -18,7 +18,7 @@ public class BaseService {
     // Util methods
     //-------------------------------
 
-    protected String getURL(final String criteria, // final String longitude, final String latitude,
+    protected String getURL(final String criteria,
                             final String urlPrefix, final String urlSuffix,
                             final String urlKey) {
 

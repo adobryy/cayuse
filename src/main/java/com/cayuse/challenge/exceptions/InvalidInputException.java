@@ -1,13 +1,13 @@
 package com.cayuse.challenge.exceptions;
 
-public class InvalidInpuException extends RuntimeException{
+public class InvalidInputException extends RuntimeException{
     private static final long serialVersionUID = 7572076970214775188L;
 
-    public InvalidInpuException(String message) {
+    public InvalidInputException(String message) {
         super(message);
     }
 
-    public InvalidInpuException(String message, Throwable cause) {
+    public InvalidInputException(String message, Throwable cause) {
         super(message, cause);
     }
 

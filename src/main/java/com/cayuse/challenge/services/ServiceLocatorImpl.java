@@ -1,7 +1,7 @@
 package com.cayuse.challenge.services;
 
 
-import com.cayuse.challenge.exceptions.InvalidInpuException;
+import com.cayuse.challenge.exceptions.InvalidInputException;
 import com.cayuse.challenge.exceptions.NoDataAvailableException;
 import com.cayuse.challenge.model.WeatherInfo;
 import org.apache.commons.lang3.StringUtils;
@@ -27,10 +27,10 @@ public class ServiceLocatorImpl implements ServiceLocator {
 
 
     @Override
-    public String getAllAvailableInfoFromZip(String zip)  throws InvalidInpuException, NoDataAvailableException {
+    public String getAllAvailableInfoFromZip(String zip)  throws InvalidInputException, NoDataAvailableException {
 
         if(!validateInput(zip)) {
-            throw new InvalidInpuException(String.format("Invalid zip code:%s", zip));
+            throw new InvalidInputException(String.format("Invalid zip code:%s", zip));
         }
         try {
                 WeatherInfo weatherInfo = openWeatherService.getTemperature(zip);
